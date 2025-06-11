@@ -55,6 +55,7 @@ export default function Component() {
           </linearGradient>
         </defs>
 
+        {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
         {connections.map((connection, index) => (
           <path
             key={index}

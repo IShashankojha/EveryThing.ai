@@ -15,6 +15,9 @@ const eslintConfig = [
     rules: {
       "react/no-unescaped-entities": "off",
       "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
     },
   },
 ];

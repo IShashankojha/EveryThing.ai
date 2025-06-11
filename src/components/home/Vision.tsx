@@ -78,9 +78,9 @@ export default function Component() {
               </h2>
               <h3 className="text-xl font-semibold text-foreground/90 mb-6">Ambition</h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Hiring doesn't have to be a painful guessing game. We're bridging the gap between recruiters and
-                software engineers through our platform, where talent and opportunity finally meet, creating the perfect
-                match.
+              Hiring doesn&apos;t have to be a painful guessing game. We&apos;re bridging the gap between recruiters and
+              software engineers through our platform, where talent and opportunity finally meet, creating the perfect
+              match.
               </p>
             </div>
 

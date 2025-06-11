@@ -116,25 +116,23 @@ export default function JourneySection() {
 			</>
 
 			<section className="w-full">
-				{journeyData.map((project, i) => {
-					const targetScale = 1 - (journeyData.length - i) * 0.05
-					return (
-						<Card
-							key={`journey_${i}`}
-							i={i}
-							url={project?.link}
-							src={project?.src}
-							year={project?.year}
-							title={project?.title}
-							color={project?.color}
-							description={project?.description}
-							stats={project?.stats}
-							progress={scrollYProgress}
-							range={[i * 0.25, 1]}
-							targetScale={targetScale}
-						/>
-					)
-				})}
+{journeyData.map((project, i) => {
+	const targetScale = 1 - (journeyData.length - i) * 0.05
+	return (
+		<Card
+			key={`journey_${i}`}
+			i={i}
+			url={project?.link}
+			year={project?.year}
+			title={project?.title}
+			description={project?.description}
+			stats={project?.stats}
+			progress={scrollYProgress}
+			range={[i * 0.25, 1]}
+			targetScale={targetScale}
+		/>
+	)
+})}
 			</section>
  
 		</main>
@@ -146,9 +144,7 @@ interface CardProps {
 	year: string
 	title: string
 	description: string
-	src: string
 	url: string
-	color: string
 	stats: { value: string; label: string }[]
 	progress: MotionValue<number>
 	range: [number, number]
@@ -160,9 +156,7 @@ export const Card: React.FC<CardProps> = ({
 	year,
 	title,
 	description,
-	src,
 	url,
-	color,
 	stats,
 	progress,
 	range,

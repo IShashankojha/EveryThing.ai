@@ -72,7 +72,7 @@ export default function Component() {
       </svg>
 
       {/* City markers */}
-      {cities.map((city, index) => (
+      {cities.map((city) => (
         <div
           key={city.name}
           className="absolute transform -translate-x-1/2 -translate-y-1/2"

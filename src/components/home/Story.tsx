@@ -26,7 +26,7 @@ export default function StorySection() {
                 Behind Us
               </h2>
               <p className="max-w-md text-muted-foreground">
-                It all started with one question: What if hiring didn't have to feel like gambling on a hunch?
+                It all started with one question: What if hiring didn&apos;t have to feel like gambling on a hunch?
               </p>
             </div>
 

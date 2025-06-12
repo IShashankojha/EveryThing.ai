@@ -42,12 +42,12 @@ const thriveFeatures = [
 
 export default function Component() {
 	return (
-		<div className="relative min-h-screen w-full overflow-hidden bg-dot-pattern bg-background selection:bg-purple-300/10 ">
+		<div className="relative min-h-50hv w-full overflow-hidden bg-dot-pattern bg-background selection:bg-purple-300/10 ">
 			{/* Background Mask */}
 			<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
 			{/* Decorative Elements */}
-			<div className="absolute right-20 top-8 h-16 w-16 rounded-full bg-gradient-to-br from-purple-400/80 to-pink-400/80 opacity-80 dark:from-purple-600/50 dark:to-pink-600/50">
+			<div className="absolute right-20 top-8 h-16 w-16 rounded-full bg-gradient-to-br from-pink-400 to-purple-500 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md opacity-80 dark:from-purple-600/50 dark:to-pink-600/50">
 				<div className="flex h-full w-full items-center justify-center rounded-full bg-white/20 dark:bg-white/10">
 					<div className="h-8 w-8 rounded-full bg-white/30 dark:bg-white/5"></div>
 				</div>
@@ -85,8 +85,10 @@ export default function Component() {
 						</div>
 
 						{/* Features Grid */}
+						
 						<div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:gap-3">
 							{thriveFeatures.map((feature) => (
+								
 								<div
 									key={feature.id}
 									className="group rounded-xl border border-border bg-card/50 p-2 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:border-border/50 dark:bg-card/10"

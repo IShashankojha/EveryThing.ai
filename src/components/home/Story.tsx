@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function StorySection() {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-dot-pattern bg-background selection:bg-purple-300/10">
+<section className="relative w-full overflow-hidden bg-dot-pattern bg-background selection:bg-purple-300/10">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
       {/* Top decorative circle */}
@@ -13,7 +13,7 @@ export default function StorySection() {
       </div>
 
       {/* Main content container */}
-      <div className="container relative mx-auto px-4 py-20">
+      <div className="container relative mx-auto px-4 py-15">
         <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Left side content */}
           <div className="space-y-10">
@@ -31,34 +31,34 @@ export default function StorySection() {
             </div>
 
             {/* Feature cards grid */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 ">
               {/* AI-Powered Card */}
               <Card className="group border-border bg-card/80 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg dark:border-border/50">
-                <CardContent className="space-y-2 p-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/50">
-                    <CircleIcon className="h-5 w-5 text-purple-500 dark:text-purple-400" />
+                <CardContent className="rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 border border-transparent bg-clip-padding shadow-[0_0_0_1px] shadow-purple-300 dark:shadow-purple-600">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full">
+                    <CircleIcon className="h-5 w-5 text-purple-800 dark:text-purple-500" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">AI-Powered</h3>
                   <p className="text-sm text-muted-foreground">Advanced AI/ML algorithms for precise matching</p>
                 </CardContent>
               </Card>
 
-              {/* Human-Centric Card */}
-              <Card className="group border-border bg-card/80 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg dark:border-border/50">
-                <CardContent className="space-y-2 p-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/50">
-                    <Users className="h-5 w-5 text-purple-500 dark:text-purple-400" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground">Human-Centric</h3>
-                  <p className="text-sm text-muted-foreground">Built by recruiters, for recruiters</p>
-                </CardContent>
-              </Card>
+                {/* Human-Centric Card */}
+                <Card className="group border-border bg-card/80 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg dark:border-border/50">
+                  <CardContent className="rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 border border-transparent bg-clip-padding shadow-[0_0_0_1px] shadow-purple-300 dark:shadow-purple-600">
+                    <div className="flex h-15 w-10 items-center justify-center rounded-full">
+                      <Users className="h-5 w-5 text-purple-800 dark:text-purple-500" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">Human-Centric</h3>
+                    <p className="text-sm text-muted-foreground">Built by recruiters, for recruiters</p>
+                  </CardContent>
+                </Card>
 
               {/* Skill Assessment Card */}
               <Card className="group border-border bg-card/80 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg dark:border-border/50">
-                <CardContent className="space-y-2 p-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/50">
-                    <Brain className="h-5 w-5 text-purple-500 dark:text-purple-400" />
+                <CardContent className="p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 border border-transparent bg-clip-padding shadow-[0_0_0_1px] shadow-purple-300 dark:shadow-purple-600">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full">
+                    <Brain className="h-5 w-5 text-purple-800 dark:text-purple-500" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">Skill Assessment</h3>
                   <p className="text-sm text-muted-foreground">Comprehensive skill evaluation system</p>
@@ -67,9 +67,9 @@ export default function StorySection() {
 
               {/* Future-Ready Card */}
               <Card className="group border-border bg-card/80 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg dark:border-border/50">
-                <CardContent className="space-y-2 p-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/50">
-                    <Rocket className="h-5 w-5 text-purple-500 dark:text-purple-400" />
+                <CardContent className="p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 border border-transparent bg-clip-padding shadow-[0_0_0_1px] shadow-purple-300 dark:shadow-purple-600">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full">
+                    <Rocket className="h-5 w-5 text-purple-800 dark:text-purple-500" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">Future-Ready</h3>
                   <p className="text-sm text-muted-foreground">Constantly evolving with industry needs</p>
@@ -94,20 +94,6 @@ export default function StorySection() {
         </div>
       </div>
 
-      {/* Bottom decorative circle */}
-      <div className="absolute bottom-10 right-1/4">
-        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-500/80 opacity-80 blur-sm dark:from-purple-600/50 dark:to-pink-600/50" />
-      </div>
-
-      {/* Values section indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-center">
-        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-colors">
-          <div className="text-xs font-bold text-white">+</div>
-        </div>
-       </div>
-
-      {/* Decorative curve */}
-      <div className="absolute bottom-20 right-0 h-40 w-1/3 rounded-tl-full border-t-2 border-purple-100/50 dark:border-purple-100/10" />
     </section>
   )
 }

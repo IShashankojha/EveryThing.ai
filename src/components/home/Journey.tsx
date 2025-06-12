@@ -83,31 +83,30 @@ export default function JourneySection() {
 	return (
 		<main className="relative min-h-screen bg-background selection:bg-purple-300/10" ref={container}>
 			<>
-				<section className="text-gray-900 dark:text-white h-[20vh] w-full grid place-content-center relative">
+				<section className="text-gray-900 dark:text-white h-[35vh] w-full grid place-content-center relative">
 					{/* Decorative Elements */}
 					<div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(216,180,254,0.15),rgba(255,255,255,0))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
 					<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
 					<div className="container mx-auto px-6 text-center relative z-10 space-y-8">
-						<div className="inline-block rounded-full bg-white/95 dark:bg-gray-800/80 border border-gray-200/50 dark:border-gray-700/50 px-4 py-1.5 backdrop-blur-sm shadow-sm">
-							<span className="text-gray-900 dark:text-gray-200 font-semibold text-sm tracking-wide uppercase">
+						<div className="inline-block rounded-lg bg-white dark:bg-gray-50 border-gray-200/50 dark:border-gray-700/50 px-2 py-1  backdrop-blur-sm shadow-sm text-sm">
+							<span className="text-gray-900 dark:text-purple text-sm tracking-wide ">
 								Our Values & Milestones
 							</span>
 						</div>
-
-						<h1 className="text-black dark:text-gray-400 text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-black dark:text-gray-400 text-2xl lg:text-4xl font-bold leading-tight tracking-tight">
 							Our{" "}
 							<span className="bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
 								Journey
 							</span>
 						</h1>
 
-						<p className="text-white dark:text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed font-semibold">
+						<p className="text-white to to-black dark:text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed font-semibold">
 							Explore the milestones that have shaped our path to innovation, where every step brings us closer to
 							transforming the future.
 						</p>
 
-						<button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 mx-auto transition-all duration-300 shadow-md hover:shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20 dark:shadow-purple-900/20 dark:hover:shadow-purple-900/30">
+						<button className="bg-white dark:bg-gray-800 text-black dark:text-white px-4 py-3 rounded-lg font-medium flex items-center gap-2 mx-auto transition-all duration-300 shadow-md hover:shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20 dark:shadow-purple-900/20 dark:hover:shadow-purple-900/30">
 							<Mail className="w-4 h-4" />
 							Subscribe to Updates
 						</button>
@@ -172,7 +171,7 @@ export const Card: React.FC<CardProps> = ({
 	const scale = useTransform(progress, range, [1, targetScale])
 
 	return (
-		<div ref={container} className="h-[100vh] flex items-center justify-center sticky top-0">
+		<div ref={container} className="h-[80vh] flex items-center justify-center sticky top-0">
 			<motion.div
 				style={{
 					scale,

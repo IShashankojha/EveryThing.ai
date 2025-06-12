@@ -37,9 +37,9 @@ const socialLinks = [
 
 export default function Component() {
   return (
-    <footer className="w-full bg-gray-950 dark:bg-gray-950 text-gray-100 dark:text-gray-100 relative overflow-hidden px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <footer className="w-full bg-gray-950 dark:bg-gray-950 text-gray-100 dark:text-gray-100 relative overflow-hidden ">
       {/* Main Footer Content */}
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 lg:mb-16">
           {/* Company Info */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1 space-y-6">
@@ -121,36 +121,37 @@ export default function Component() {
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* City Skyline Image */}
-        <div className="relative mb-8 h-24 sm:h-32 lg:h-40 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50 dark:to-gray-950/50 z-10" />
-          <div className="relative w-full h-full">
-            <Image
-              src="/placeholder.svg?height=200&width=1400"
-              alt="City skyline illustration"
-              fill
-              className="object-cover object-bottom w-full"
-              priority
-            />
-          </div>
+      {/* City Skyline Image */}
+      <div className="relative w-full">
+        <div className=" space-y-4 absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50 dark:to-gray-950/50 z-10" />
+        <div className="max-h-full h-full w-full  opacity-60">
+          <Image
+            src="/Skyline.png"
+            alt="City skyline illustration"
+            width={600}
+            height={1900}
+            className="object-contain object-bottom w-full"
+            priority
+          />
+        </div>
 
-          {/* Brand Text Overlay */}
-          <div className="absolute top-1/2 right-4 lg:right-8 transform -translate-y-1/2 z-20">
-            <div className="text-right">
-              <div className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                EVERYTHINGTALENT.AI
-              </div>
+        {/* Brand Text Overlay */}
+        <div className="absolute top-1/5 right-5 lg:right-4 transform -translate-y-1/2 z-20">
+          <div className="text-right">
+            <div className="text-sm sm:text-xl lg:text-2xl xl:text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              EVERYTHINGTALENT.AI
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Copyright */}
-        <div className="text-center pt-6 sm:pt-8 border-t border-gray-800/50 dark:border-gray-800">
-          <p className="text-gray-400 dark:text-gray-400 text-sm">
-            © {new Date().getFullYear()} Everything Talent Labs, LLC. All Rights Reserved.
-          </p>
-        </div>
+      {/* Copyright */}
+      <div className="text-center pt-0 sm:pt-3 border-t border-gray-800/50 dark:border-gray-800 mb-2">
+        <p className="text-gray-400 dark:text-gray-400 text-sm">
+          © {new Date().getFullYear()} Everything Talent Labs, LLC. All Rights Reserved.
+        </p>
       </div>
     </footer>
   )

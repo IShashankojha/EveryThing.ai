@@ -92,8 +92,7 @@ export default function Component() {
 		<div className="relative min-h-screen w-full overflow-hidden bg-dot-pattern bg-background selection:bg-purple-300/10">
 			<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
-			{/* Decorative Elements */}
-			<div className="absolute right-20 top-8 h-16 w-16 rounded-full bg-gradient-to-br from-purple-400/80 to-pink-400/80 opacity-80 dark:from-purple-600/50 dark:to-pink-600/50" />
+		 
 
 			<div className="container relative mx-auto px-6 py-16 lg:py-24">
 				{/* Header Section */}

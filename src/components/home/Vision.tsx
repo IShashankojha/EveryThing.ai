@@ -6,8 +6,7 @@ export default function Component() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-dot-pattern bg-background selection:bg-purple-300/10">
       {/* Background Pattern */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-
+     <div className="relative h-full w-full bg-white"><div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div></div>
       {/* Top Gradient Circle */}
       <div className="absolute top-8 right-20 w-16 h-16 bg-gradient-to-br from-purple-500/80 to-pink-500/80 opacity-70 blur-sm dark:from-purple-600/50 dark:to-pink-600/50 rounded-full" />
 
@@ -127,8 +126,6 @@ export default function Component() {
       </div>
 
       {/* Bottom Gradient Circles */}
-      <div className="absolute bottom-20 left-10 w-12 h-12 bg-gradient-to-br from-purple-500 via-pink-500 to-purple-600 dark:from-purple-600 dark:via-pink-600 dark:to-purple-700 rounded-full opacity-70 blur-sm" />
-      <div className="absolute bottom-32 right-16 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 dark:from-purple-600 dark:to-pink-600 rounded-full opacity-50" />
-    </div>
+      </div>
   )
 }

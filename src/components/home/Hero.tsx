@@ -22,25 +22,25 @@ export default function HeroSection() {
 
             {/* Main Heading */}
             <div>
-              <h1 className=" text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-relaxed text-[hsl(var(--foreground))]">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-relaxed text-[hsl(var(--foreground))]">
                 Shaping the Next
                 <br />
-                Generation of HR <span className="text-pink-600 dark:text-pink-400">Tech</span>
+                Generation of HR <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">Tech</span>
                 <br />
-                <span className="text-purple-600 dark:text-purple-400">Recruitment.</span>
+                <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">Recruitment.</span>
               </h1>
             </div>
 
             {/* Description */}
-            <div className="max-w-lg">
-              <p className="text-lg leading-relaxed text-[hsl(var(--foreground))]">
+            <div className="max-w-md">
+              <p className="text-md leading-relaxed text-[hsl(var(--foreground))]">
                 At Everything Talent, we help you launch your recruitment into a new dimension.
               </p>
             </div>
 
             {/* CTA Button */}
-            <div className="relative p-1 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-400 inline-block">
-              <button className="inline-flex items-center gap-3 bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300">
+            <div className="relative p-1 rounded-lg bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-400 inline-block transition-colors duration-50">
+              <button className="inline-flex items-center gap-3 bg-black dark:bg-White text-White dark:text-white px-4 py-1 rounded-md font-lg  dark:hover:bg-black transition-colors duration-300">
                 Start for Free Today
                 <ArrowRight className="h-5 w-5" />
               </button>

@@ -26,7 +26,7 @@ export default function Component() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-extrabold text-foreground mb-10 leading-tight">
             The Fuel for{" "}
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
               Our Vision
@@ -34,36 +34,38 @@ export default function Component() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-md md:text-xl text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
             Driven by vision, we provide comprehensive solutions to meet all your hiring needs.
           </p>
 
           {/* Navigation Pills */}
-          <div className="flex flex-wrap justify-center gap-3 mb-16">
-            <Badge
-              variant="secondary"
-              className="px-6 py-2 text-sm font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors"
-            >
-              Ambition
-            </Badge>
-            <Badge 
-              variant="outline" 
-              className="px-6 py-2 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-            >
-              Satisfaction
-            </Badge>
-            <Badge 
-              variant="outline" 
-              className="px-6 py-2 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-            >
-              Integrity
-            </Badge>
-            <Badge 
-              variant="outline" 
-              className="px-6 py-2 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-            >
-              Vigilance
-            </Badge>
+          <div className="bg-background dark:bg-background rounded-full p-1 mb-10 max-w-max mx-auto shadow-sm border border-muted">
+            <div className="flex flex-wrap rounded-full justify-center gap-5">
+              <Badge
+                variant="secondary"
+                className="rounded-full text-black bg-purple-200 hover:bg-purple-300 transition-colors dark:bg-purple-200 dark:text-black dark:hover:bg-purple-300 text-sm font-medium px-6 py-2"
+              >
+                Ambition
+              </Badge>
+              <Badge 
+                variant="outline" 
+                className="rounded-full px-6 py-2 text-black bg-purple-200 hover:bg-purple-300 transition-colors dark:bg-purple-200 dark:text-black dark:hover:bg-purple-300 text-sm font-medium"
+              >
+                Satisfaction
+              </Badge>
+              <Badge 
+                variant="outline" 
+                className="rounded-full px-6 py-2 text-black bg-purple-200 hover:bg-purple-300 transition-colors dark:bg-purple-200 dark:text-black dark:hover:bg-purple-300 text-sm font-medium"
+              >
+                Integrity
+              </Badge>
+              <Badge 
+                variant="outline" 
+                className="rounded-full px-6 py-2 text-black bg-purple-200 hover:bg-purple-300 transition-colors dark:bg-purple-200 dark:text-black dark:hover:bg-purple-300 text-sm font-medium"
+              >
+                Vigilance
+              </Badge>
+            </div>
           </div>
         </div>
 

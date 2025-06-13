@@ -25,7 +25,7 @@ const connections = [
 
 export default function Component() {
   return (
-    <div className="min-h-[400px] bg-gray-50 dark:bg-gray-900 relative overflow-hidden rounded-3xl mt-[-4rem] mb-16">
+    <div className="min-h-[400px] bg-gray-50 dark:bg-gray-900 relative overflow-hidden rounded-3xl mt-[-4rem] mb-16 px-4 sm:px-6 lg:px-8">
       {/* Dotted Background Pattern */}
       <div
         className="absolute inset-0 opacity-30"
@@ -91,29 +91,29 @@ export default function Component() {
       ))}
 
       {/* Central Mission Card */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-gradient-to-br from-purple-200 via-purple-100 to-pink-100 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-2xl border border-purple-200/50 max-w-2xl mx-4 text-center">
+      <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-br from-purple-200 via-purple-100 to-pink-100 backdrop-blur-sm rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl border border-purple-200/50 max-w-full sm:max-w-2xl mx-auto text-center">
           <div className="space-y-6">
-            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
               Join Our{" "}
               <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Mission
               </span>
             </h1>
 
-            <p className="text-gray-700 text-lg leading-relaxed max-w-lg mx-auto">
+            <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-lg mx-auto">
               Help us reimagine the future of hiring in the tech industry.
             </p>
 
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-medium text-base">
+            <Button className="bg-gray-900 hover:bg-gray-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium text-base sm:text-lg">
               Start Here
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </Button>
           </div>
 
           {/* Decorative elements */}
-          <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-60"></div>
-          <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-40"></div>
+          <div className="absolute -top-4 -right-4 w-6 sm:w-8 h-6 sm:h-8 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-60"></div>
+          <div className="absolute -bottom-4 -left-4 w-4 sm:w-6 h-4 sm:h-6 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-40"></div>
         </div>
       </div>
 

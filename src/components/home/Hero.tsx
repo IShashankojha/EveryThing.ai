@@ -27,22 +27,22 @@ export default function HeroSection() {
                 <br />
                 Generation of HR <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">Tech</span>
                 <br />
-                <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">Recruitment.</span>
+                <span className="bg-gradient-to-r from-purple-500 via-blue-400 to-yellow-500 bg-clip-text text-transparent">Recruitment.</span>
               </h1>
             </div>
 
             {/* Description */}
             <div className="max-w-md">
-              <p className="text-md leading-relaxed text-[hsl(var(--foreground))]">
+              <p className="text-md leading-relaxed text-black-200 dark:text-gray-500">
                 At Everything Talent, we help you launch your recruitment into a new dimension.
               </p>
             </div>
 
             {/* CTA Button */}
-            <div className="relative p-1 rounded-lg bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-400 inline-block transition-colors duration-50">
-              <button className="inline-flex items-center gap-3 bg-black dark:bg-White text-White dark:text-white px-4 py-1 rounded-md font-lg  dark:hover:bg-black transition-colors duration-300">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-purple-600 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group relative inline-flex cursor-pointer items-center justify-center bg-black font-medium text-white dark:text-white transition-all duration-500 ease-in-out border border-transparent hover:border-purple-600 hover:ring-2 hover:ring-purple-600 hover:outline-2 hover:outline-purple-600 [&>span]:relative [&>span]:z-10 h-11 rounded-md px-8 text-sm sm:text-md">
                 Start for Free Today
-                <ArrowRight className="h-5 w-5" />
+                <svg className="ml-2 -mr-1 w-5 h-5 group-hover:translate-x-1 transition" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a 1 1 0 010 1.414l-6 6a 1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               </button>
             </div>
           </div>

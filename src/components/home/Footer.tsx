@@ -35,11 +35,11 @@ const socialLinks = [
   { name: "Facebook", icon: Facebook, href: "#" },
 ]
 
-export default function Component() {
+export default function Footer() {
   return (
     <footer className="w-full bg-gray-950 dark:bg-gray-950 text-gray-100 dark:text-gray-100 relative overflow-hidden ">
       {/* Main Footer Content */}
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-4 lg:px-6 pt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-12 lg:mb-16">
           {/* Company Info */}
           <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-1 space-y-6">
@@ -126,21 +126,20 @@ export default function Component() {
       {/* City Skyline Image */}
       <div className="relative w-full">
         <div className=" space-y-3 absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50 dark:to-gray-950/50 z-10" />
-        <div className="max-h-50vh h-50vh w-90vh  opacity-50">
+        <div className="h-[50vh] w-full opacity-50">
           <Image
-            src="/Skyline.png"
-            alt="City skyline illustration"
-            width={1850}
-            height={800}
-            className="object-contain object-bottom w-70vh"
+            src="https://www.everythingtalent.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbottom_san_fransisco_skyline.d6d7fc0b.png&w=1536&q=75"
+            alt="San Francisco skyline illustration"
+            fill
+            style={{ objectFit: "contain", objectPosition: "bottom" }}
             priority
           />
         </div>
 
         {/* Brand Text Overlay */}
-        <div className="absolute top-1/5 lg:pr-30 right-2 lg:right-2 transform -translate-y-1/2 z-20">
+        <div className="absolute top-1/5 lg:pr-60 right-2 lg:right-4 transform -translate-y-1/2 z-20">
           <div className="text-right">
-            <div className="text-sm sm:text-xl lg:text-2xl xl:text-2xl font-bold bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
+            <div className="text-sm sm:text-xl lg:text-2xl xl:text-2xl font-bold bg-gradient-to-r from-violet-400 to-pink-600 bg-clip-text text-transparent">
               EVERYTHINGTALENT.AI
             </div>
           </div>

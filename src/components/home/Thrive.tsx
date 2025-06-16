@@ -45,14 +45,17 @@ export default function Component() {
 		<div className="relative min-h-50hv w-full overflow-hidden bg-dot-pattern bg-background selection:bg-purple-300/10 ">
 			{/* Background Mask */}
 			<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-
-			{/* Decorative Elements */}
-			<div className="absolute right-20 top-8 h-16 w-16 rounded-full bg-gradient-to-br from-pink-400 to-purple-500 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md opacity-80 dark:from-purple-600/50 dark:to-pink-600/50">
-				<div className="flex h-full w-full items-center justify-center rounded-full bg-white/20 dark:bg-white/10">
-					<div className="h-8 w-8 rounded-full bg-white/30 dark:bg-white/5"></div>
-				</div>
-			</div>
-
+ 
+			  
+			   <div style={{zIndex:45}} className="h-40 pt-1 w-[1.5px] relative mx-auto bg-gradient-to-t from-blue-500 via-purple-600 to-yellow-300/40"></div>
+          <div className="flex justify-center mb-6  mx-auto items-center border p-[6px] border-white bg-gradient-to-br from-[#1b8afa32] via-[#da16c62f] to-[#fed91e1a] rounded-full w-fit  ">
+            <div className="w-15 h-15 bg-gradient-to-br from-blue-200 via-pink-500 to-blue-200 dark:from-blue-600 dark:via-pink-400 dark:to-orange-500 rounded-full flex items-center justify-center shadow-lg">
+             
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-lightbulb-icon lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg> 
+         </div>
+          </div>
+   
+			
 			<div className="container relative mx-auto px-4 py-16 sm:px-6 lg:px-8">
 				<div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-2 lg:gap-16">
 					{/* Left Image */}
@@ -61,8 +64,8 @@ export default function Component() {
 							<Image
 								src="/image.png"
 								alt="Professional woman working on laptop with analytics charts in background"
-								width={1200}
-								height={1200}
+								width={1000}
+								height={1000}
 								className="h-auto w-full object-cover transition-opacity duration-300 dark:opacity-90"
 								priority
 							/>
@@ -70,7 +73,7 @@ export default function Component() {
 					</div>
 
 					{/* Right Content */}
-					<div className="order-1 space-y-8 lg:order-2">
+					<div className="order-1 space-y-12 lg:order-2">
 						<div className="space-y-6">
 							<h1 className="text-sm font-bold leading-tight sm:text-sm lg:text-2xl">
 								<span className="text-gradient bg-gradient-to-r from-pink-600 to-purple-600 dark:from-pink-400 dark:to-purple-400 bg-clip-text text-transparent">

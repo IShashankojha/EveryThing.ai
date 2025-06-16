@@ -7,14 +7,18 @@ export default function StorySection() {
 <section className="relative w-full overflow-hidden bg-dot-pattern bg-background selection:bg-purple-300/10">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
-      {/* Top decorative circle */}
-      <div className="absolute left-1/2 top-10 -translate-x-1/2">
-        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-500/80 opacity-80 blur-sm dark:from-purple-600/50 dark:to-pink-600/50" />
-      </div>
-
+       <div style={{zIndex: 45}} className="h-40 pt-1 w-[1.5px] relative mx-auto bg-gradient-to-t from-blue-500 via-purple-600 to-yellow-300/40"></div>
+          <div className="flex justify-center mb-6  mx-auto items-center border p-[6px] border-white bg-gradient-to-br from-[#1b8afa32] via-[#da16c62f] to-[#fed91e1a] rounded-full w-fit  ">
+            <div className="w-15 h-15 bg-gradient-to-br from-blue-200 via-pink-500 to-blue-200 dark:from-blue-600 dark:via-pink-400 dark:to-orange-500 rounded-full flex items-center justify-center shadow-lg">
+             
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-lightbulb-icon lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg> 
+         </div>
+          </div>
+   
       {/* Main content container */}
       <div className="container relative mx-auto px-4 py-15">
         <div className="grid items-center gap-12 md:grid-cols-2">
+          
           {/* Left side content */}
           <div className="space-y-10">
             <div className="space-y-4">

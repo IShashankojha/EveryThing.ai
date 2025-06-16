@@ -83,7 +83,7 @@ export default function JourneySection() {
 	return (
 	<main className="relative min-h-screen bg-background selection:bg-blue-200" ref={container}>
 			<>
-				<section className="text-gray-900 dark:text-white h-[35vh] w-full grid place-content-center relative">
+				<section className="text-gray-900 dark:text-white h-[50vh] w-full grid place-content-center relative">
 					 
 					<div className="container mx-auto px-6 text-center relative z-10 space-y-8">
 						<div className="inline-block rounded-lg bg-white dark:bg-gray-50 border-gray-200/50 dark:border-gray-700/50 px-2 py-1  backdrop-blur-sm shadow-sm text-sm">
@@ -102,13 +102,17 @@ export default function JourneySection() {
 							Explore the milestones that have shaped our path to innovation, where every step brings us closer to
 							transforming the future.
 						</p>
-					  <div className="relative p-1 rounded-lg bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-400 inline-block transition-colors duration-50">
-						<button className=" inline-flex items-center gap-3 bg-black dark:bg-White text-White dark:text-white px-4 py-1 rounded-md font-lg  dark:hover:bg-black transition-colors duration-300">
-							<Mail className="w-4 h-4" />
-							Subscribe to Updates
-						</button>
-						</div>
-					</div>
+					 <div className="relative z-10 flex items-center justify-center gap-5">
+   					 <button className="whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-purple-600 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group relative inline-flex cursor-pointer items-center justify-center bg-black font-medium text-white dark:text-white transition-all duration-500 ease-in-out border border-transparent hover:border-purple-600 hover:ring-2 hover:ring-purple-600 hover:outline-2 hover:outline-purple-600 [&>span]:relative [&>span]:z-10 h-11 rounded-md px-10 text-sm sm:text-md">
+        					Subscribe to Updates  
+			<svg className="ml-2 -mr-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+            		<path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"></path>
+            		<path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z">
+					</path>
+        </svg>  
+    </button>
+</div>
+</div>
 				</section>
 			</>
 
@@ -172,7 +176,7 @@ export const Card: React.FC<CardProps> = ({
 	const scale = useTransform(progress, range, [1, targetScale])
 
 	return (
-		<div ref={container} className="h-screen flex items-center justify-center sticky top-0">
+		<div ref={container} className="w-full flex items-center justify-center sticky top-0">
 <motion.div
   style={{
     scale,
@@ -197,12 +201,12 @@ export const Card: React.FC<CardProps> = ({
 							{/* Stats Grid */}
 							<div className="grid grid-cols-2 gap-3 sm:gap-4">
 								{stats.map((stat, statIndex) => (
-									<div
-										key={statIndex}
-										className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/60 p-2
-										transition-all duration-300 hover:scale-[1.02] hover:shadow-lg group
-										hover:bg-gradient-to-br hover:from-purple-50 hover:to-white dark:hover:from-purple-900/20 dark:hover:to-gray-800"
-									>
+<div
+  key={statIndex}
+  className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-blue-200 dark:bg-gray-800/60 p-2
+  transition-all duration-300 hover:scale-[1.02] hover:shadow-lg group
+  hover:bg-gradient-to-br hover:from-purple-50 hover:to-white dark:hover:from-purple-900/20 dark:hover:to-gray-800"
+>
 										<div className="text-sm sm:text-md lg:text-xl font-bold text-purple-600 dark:text-purple-400 group-hover:text-purple-700 dark:group-hover:text-purple-300 mb-1">{stat.value}</div>
 										<div className="text-gray-500 dark:text-gray-400 text-xs sm:text-sm md:text-sm">{stat.label}</div>
 									</div>

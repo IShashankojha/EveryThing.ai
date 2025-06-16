@@ -119,8 +119,9 @@ export default function Header() {
                         Request for Demo
                     </Button>
                     <ModeToggle />
-                    <Button variant="outline" size="sm" className="hidden sm:inline-flex backdrop-blur dark:bg-white dark:text-black">
+                    <Button variant="outline" size="sm" className=" whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-purple-600 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group relative inline-flex cursor-pointer items-center justify-center bg-black font-medium text-white transition-all duration-500 ease-in-out border border-transparent hover:border-purple-600 hover:ring-2 hover:ring-purple-600 hover:outline-2 hover:outline-purple-600 [&>span]:relative [&>span]:z-10 h-8 rounded-md px-8 text-sm sm:text-sm dark:bg-white dark:text-black">
                         Login
+                <svg className="ml-2 -mr-1 w-5 h-5 group-hover:translate-x-1 transition" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a 1 1 0 010 1.414l-6 6a 1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                     </Button>
                 </div>
             </div>

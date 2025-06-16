@@ -126,7 +126,7 @@ export default function Footer() {
       {/* City Skyline Image */}
       <div className="relative w-full">
         <div className=" space-y-3 absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50 dark:to-gray-950/50 z-10" />
-        <div className="h-[50vh] w-full opacity-50">
+        <div className="relative h-[50vh] w-full opacity-50">
           <Image
             src="https://www.everythingtalent.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbottom_san_fransisco_skyline.d6d7fc0b.png&w=1536&q=75"
             alt="San Francisco skyline illustration"
